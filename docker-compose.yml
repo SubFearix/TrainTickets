@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # PostgreSQL база данных
+  db:
+    image: postgres:15-alpine
+    container_name: railway_db
+    environment:
+      POSTGRES_DB: train_tickets
+      POSTGRES_USER: train_user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    ports:
+      - "5433:5432"
+    networks:
+      - railway_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U train_user -d train_tickets"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Серверное приложение
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: railway_server
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: train_tickets
+      DB_USER: train_user
+      DB_PASSWORD: password
+      SMTP_HOST: smtp.gmail.com
+      SMTP_PORT: 465
+      SMTP_USERNAME: a.pechenkin3@gmail.com
+      SMTP_PASSWORD: qhbo bkjn urbb lcnt
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server/config:/app/server/config
+    networks:
+      - railway_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  railway_network:
+    driver: bridge
