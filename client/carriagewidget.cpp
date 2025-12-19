@@ -288,7 +288,6 @@ void CarriageWidget::setupSidyachiyLayout(const QList<Seat>& seats)
         sw->setOccupied(!seat.isAvailable);
 
         connect(sw, &QPushButton::clicked, this, [this, sw]() {
-            // Предотвращаем автоматическое переключение - вручную управляем состоянием
             sw->setChecked(!sw->isChecked());
             emit seatClicked(sw->getSeat(), sw);
         });
