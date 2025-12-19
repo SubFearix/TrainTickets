@@ -61,7 +61,6 @@ void MyTicketsWidget::setupUi(){
     headerLayout->addStretch();
     headerLayout->addWidget(m_refreshButton);
 
-    // Табы для активных и завершенных билетов
     m_tabWidget = new QTabWidget(this);
     m_tabWidget->setStyleSheet(R"(
         QTabWidget::pane {
