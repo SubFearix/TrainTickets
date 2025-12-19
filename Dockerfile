@@ -14,15 +14,13 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-# Копируем всё содержимое проекта (и server, и libs)
+
 COPY . .
 
-# Переходим в папку сервера перед сборкой
 WORKDIR /app/server
 
-# Запускаем сборку
 RUN cmake -Bbuild -S. && cmake --build build
 
 EXPOSE 8080
-# Путь к бинарнику тоже изменится, так как мы собираем внутри /app/server
+
 CMD ["./build/TrainTicketsServer"]
