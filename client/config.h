@@ -14,15 +14,12 @@ const QString APP_NAME = "Railway Ticket Booking System";
 const QString APP_VERSION = "1.0.0";
 const QString APP_ORGANIZATION = "Railway Inc.";
 
-// Настройки UI
 const int MIN_WINDOW_WIDTH = 1024;
 const int MIN_WINDOW_HEIGHT = 768;
 
-// Настройки валидации
 const int MIN_PASSWORD_LENGTH = 8;
 const int VERIFICATION_CODE_LENGTH = 6;
 
-// Пути к ресурсам
 const QString ICONS_PATH = ":/icons/";
 const QString IMAGES_PATH = ":/images/";
 
