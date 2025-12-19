@@ -308,7 +308,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Черемхово'), 5, '04:00:00', '04:15:00', 15, 8000),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Владивосток'), 6, '10:00:00', '10:15:00', 0, 12000);
 
--- Москва - Санкт-Петербург (поезд 002А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='002А'), 'Москва - Санкт-Петербург', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -317,7 +316,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '07:00:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 2, '11:00:00', '11:15:00', 0, 3500);
 
--- Москва - Санкт-Петербург (поезд 004А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='004А'), 'Москва - Санкт-Петербург', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -326,7 +324,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '13:30:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 2, '17:30:00', '17:45:00', 0, 3500);
 
--- Москва - Санкт-Петербург (поезд 020А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='020А'), 'Москва - Санкт-Петербург', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -335,7 +332,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '22:00:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 2, '06:30:00', '06:45:00', 0, 2800);
 
--- Москва - Санкт-Петербург (поезд 030А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='030А'), 'Москва - Санкт-Петербург', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -344,7 +340,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '23:55:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 2, '08:00:00', '08:15:00', 0, 2500);
 
--- Москва - Казань (поезд 016А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='016А'), 'Москва - Казань', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -353,7 +348,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '08:30:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Казань'), 2, '19:45:00', '20:00:00', 0, 2800);
 
--- Москва - Казань (поезд 034К)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='034К'), 'Москва - Казань', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -372,7 +366,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '21:40:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Казань'), 2, '09:15:00', '09:30:00', 0, 2200);
 
--- Москва - Казань (поезд 092П)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='092П'), 'Москва - Казань', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -381,7 +374,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 1, NULL, '23:30:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Казань'), 2, '11:00:00', '11:15:00', 0, 2100);
 
--- Санкт-Петербург - Москва (поезд 003А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='003А'), 'Санкт-Петербург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -390,7 +382,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 1, NULL, '06:45:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 2, '10:45:00', '11:00:00', 0, 3500);
 
--- Санкт-Петербург - Москва (поезд 005А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='005А'), 'Санкт-Петербург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -399,7 +390,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 1, NULL, '19:30:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 2, '23:30:00', '23:45:00', 0, 3500);
 
--- Санкт-Петербург - Москва (поезд 021А)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='021А'), 'Санкт-Петербург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -408,7 +398,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Санкт-Петербург'), 1, NULL, '23:00:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 2, '07:00:00', '07:15:00', 0, 2800);
 
--- Екатеринбург - Москва (поезд 072У)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='072У'), 'Екатеринбург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -419,7 +408,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Киров'), 3, '01:30:00', '01:50:00', 20, 2800),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 4, '14:00:00', '14:15:00', 0, 4500);
 
--- Екатеринбург - Москва (поезд 084У)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='084У'), 'Екатеринбург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -429,7 +417,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Пермь'), 2, '21:15:00', '21:35:00', 20, 1500),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 3, '16:30:00', '16:45:00', 0, 4200);
 
--- Екатеринбург - Москва (поезд 096У)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='096У'), 'Екатеринбург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -438,7 +425,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Екатеринбург'), 1, NULL, '20:10:00', 0, 0),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 2, '19:40:00', '19:55:00', 0, 4000);
 
--- Екатеринбург - Москва (поезд 110У)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='110У'), 'Екатеринбург - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -449,7 +435,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Нижний Новгород'), 3, '15:10:00', '15:30:00', 20, 3200),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 4, '21:20:00', '21:35:00', 0, 4100);
 
--- Новосибирск - Москва (поезд 056Н)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='056Н'), 'Новосибирск - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -462,7 +447,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Пермь'), 5, '17:15:00', '17:35:00', 20, 5500),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 6, '13:45:00', '14:00:00', 0, 6500);
 
--- Новосибирск - Москва (поезд 070Н)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='070Н'), 'Новосибирск - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -473,7 +457,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Тюмень'), 3, '08:45:00', '09:05:00', 20, 3200),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 4, '16:20:00', '16:35:00', 0, 6200);
 
--- Новосибирск - Москва (поезд 082Н)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='082Н'), 'Новосибирск - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -484,7 +467,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Екатеринбург'), 3, '16:20:00', '16:40:00', 20, 4500),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 4, '19:50:00', '20:05:00', 0, 6000);
 
--- Новосибирск - Москва (поезд 094Н)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='094Н'), 'Новосибирск - Москва', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -497,7 +479,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Омск'), 5, '14:10:00', '14:30:00', 20, 2400),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Москва'), 6, '23:15:00', '23:30:00', 0, 5900);
 
--- Москва - Владивосток (поезд 010В - Россия)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='010В'), 'Москва - Владивосток (Россия)', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -514,7 +495,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Хабаровск'), 9, '07:35:00', '08:05:00', 30, 13000),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Владивосток'), 10, '19:30:00', '19:45:00', 0, 14000);
 
--- Москва - Владивосток (поезд 100В)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='100В'), 'Москва - Владивосток', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
@@ -529,7 +509,6 @@ INSERT INTO route_stops (route_id, station_id, stop_order, arrival_time, departu
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Хабаровск'), 7, '10:10:00', '10:40:00', 30, 12800),
 ((SELECT id FROM r), (SELECT id FROM stations WHERE city='Владивосток'), 8, '22:05:00', '22:20:00', 0, 13500);
 
--- Москва - Владивосток (поезд 200В)
 INSERT INTO routes (train_id, route_name, valid_from, valid_to) VALUES
 ((SELECT id FROM trains WHERE train_number='200В'), 'Москва - Владивосток', CURRENT_DATE, CURRENT_DATE + INTERVAL '1 year');
 
