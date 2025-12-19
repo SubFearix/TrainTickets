@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # PostgreSQL база данных
   db:
     image: postgres:15-alpine
     container_name: railway_db
@@ -23,7 +22,6 @@ services:
       timeout: 5s
       retries: 5
 
-  # Серверное приложение
   server:
     build:
       context: .
